@@ -6,7 +6,6 @@ import cn.tedu.sp01.pojo.User;
 import cn.tedu.sp01.util.JsonResult;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.RestTemplate;
 
 import java.util.List;
