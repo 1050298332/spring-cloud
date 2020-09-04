@@ -1,0 +1,15 @@
+
+#发现配置中心(指定配置中心的服务id)
+spring:
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        service-id: config-server
+      name: item-service
+      profile: dev
+#连接 eureka
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka1:2001/eureka, http://eureka2:2002/eureka

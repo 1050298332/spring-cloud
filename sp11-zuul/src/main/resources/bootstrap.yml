@@ -1,0 +1,15 @@
+#连接配置中下（下载指定配置）
+spring:
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        service-id: config-server
+        #下载的配置文件
+      name: zuul
+      profile: dev
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka1:2001/eureka, http://eureka2:2002/eureka

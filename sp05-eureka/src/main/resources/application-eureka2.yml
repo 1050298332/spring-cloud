@@ -1,6 +1,6 @@
 eureka:
   instance:
-    hostname: eureka2 #集群中用hostname区分服务器
+    hostname: eureka2
   client:
     register-with-eureka: true
     fetch-registry: true
